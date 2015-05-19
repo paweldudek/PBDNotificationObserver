@@ -32,7 +32,7 @@ This small tool solves this issue by introducing a notification observer:
 ```objc
 PBDNotificationObserver *observer = [PBDNotificationObserver new];
 
-// Code that posts notification
+// Run code that posts the notification
 
 verifyNotification(observer, SomeNotification);
 ```
