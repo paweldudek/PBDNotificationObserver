@@ -4,6 +4,6 @@ osx_image: yosemite
 before_install:
   - gem install cocoapods -v '0.37.1'
 
-xcode_project: PBDNotificationObserver.xcworkspace
+xcode_workspace: PBDNotificationObserver.xcworkspace
 xcode_scheme: PBDNotificationObserverTests
 
