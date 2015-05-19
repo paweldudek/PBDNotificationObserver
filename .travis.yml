@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: yosemite
+
+xcode_project: PBDNotificationObserver.xcworkspace
+xcode_scheme: PBDNotificationObserverTests
