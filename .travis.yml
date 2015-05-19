@@ -1,5 +1,9 @@
 language: objective-c
 osx_image: yosemite
 
+install:
+  - bundle install
+
 xcode_project: PBDNotificationObserver.xcworkspace
 xcode_scheme: PBDNotificationObserverTests
+
