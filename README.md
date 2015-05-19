@@ -1,5 +1,7 @@
 # PBDNotificationObserver
 
+https://travis-ci.org/paweldudek/PBDNotificationObserver.svg?branch=master
+
 This is a small helper class that helps writing tests that assert whether a specific notification was posted. 
 
 ## Motivation
