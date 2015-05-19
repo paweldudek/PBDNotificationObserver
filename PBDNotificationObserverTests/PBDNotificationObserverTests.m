@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "PBDNotificationObserver.h"
+#import <OCHamcrest/OCHamcrest.h>
 
 @interface PBDNotificationObserverTests : XCTestCase
 
@@ -15,26 +17,22 @@
 
 @implementation PBDNotificationObserverTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testVerifyNotificationName {
+    PBDNotificationObserver *observer = [PBDNotificationObserver new];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Fixture Name" object:nil];
+
+    verifyNotification(observer, @"Fixture Name");
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+- (void)testVerifyNotificationNameWithMatcher {
+    PBDNotificationObserver *observer = [PBDNotificationObserver new];
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Fixture Name" object:nil];
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    id <HCMatcher> matcher = HC_hasProperty(@"name", @"Fixture Name");
+
+    verifyNotification(observer, matcher);
 }
 
 @end
