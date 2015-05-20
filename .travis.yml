@@ -6,4 +6,5 @@ before_install:
 
 xcode_workspace: PBDNotificationObserver.xcworkspace
 xcode_scheme: PBDNotificationObserverTests
+xcode_sdk: iphonesimulator8.1
 
