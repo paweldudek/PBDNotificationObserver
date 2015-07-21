@@ -11,4 +11,11 @@ OBJC_EXPORT void VerifyNotificationsCountWithLocation(id observer, id matcherOrN
 #define verifyNotification(observer, matcherOrNotificationName) verifyNotificationsCount(observer, matcherOrNotificationName, 1)
 
 @interface PBDNotificationObserver : NSObject
+
+@property(nonatomic, readonly) id postingObject;
+
++ (instancetype)observerForObject:(id)postingObject;
+
+- (instancetype)initWithPostingObject:(id)postingObject NS_DESIGNATED_INITIALIZER;
+
 @end

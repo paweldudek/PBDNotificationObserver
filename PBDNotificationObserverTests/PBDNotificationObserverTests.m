@@ -25,6 +25,27 @@
     verifyNotification(observer, @"Fixture Name");
 }
 
+- (void)testVerifyNotificationNameWithPostingObject {
+    NSObject *postingObject = [NSObject new];
+
+    PBDNotificationObserver *observer = [[PBDNotificationObserver alloc] initWithPostingObject:postingObject];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Fixture Name" object:postingObject];
+
+    verifyNotification(observer, @"Fixture Name");
+}
+
+- (void)testVerifyNotificationNameWithDifferentPostingObject {
+    NSObject *postingObject = [NSObject new];
+    NSObject *differentPostingObject = [NSObject new];
+
+    PBDNotificationObserver *observer = [[PBDNotificationObserver alloc] initWithPostingObject:postingObject];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Fixture Name" object:differentPostingObject];
+
+    verifyNotificationsCount(observer, @"Fixture Name", 0);
+}
+
 - (void)testVerifyNotificationNameWithMatcher {
     PBDNotificationObserver *observer = [PBDNotificationObserver new];
 

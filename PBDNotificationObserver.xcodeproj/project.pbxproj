@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431909601B5E3E6E0061225F /* PBDNotificationObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A17391AE41314009DFF9A /* PBDNotificationObserverTests.m */; };
 		438A171D1AE41314009DFF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A171C1AE41314009DFF9A /* main.m */; };
 		438A17201AE41314009DFF9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A171F1AE41314009DFF9A /* AppDelegate.m */; };
-		438A17231AE41314009DFF9A /* PBDNotificationObserver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438A17211AE41314009DFF9A /* PBDNotificationObserver.xcdatamodeld */; };
-		438A17261AE41314009DFF9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A17251AE41314009DFF9A /* ViewController.m */; };
-		438A17291AE41314009DFF9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438A17271AE41314009DFF9A /* Main.storyboard */; };
 		438A172B1AE41314009DFF9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438A172A1AE41314009DFF9A /* Images.xcassets */; };
-		438A172E1AE41314009DFF9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438A172C1AE41314009DFF9A /* LaunchScreen.xib */; };
-		438A173A1AE41314009DFF9A /* PBDNotificationObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A17391AE41314009DFF9A /* PBDNotificationObserverTests.m */; };
 		88FCD6E3D164C70CE0EF063A /* libPods-specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A66F0E30E08AA5173706B53 /* libPods-specs.a */; };
 		B27A9A9568E53F9CF8C7FDAC /* PBDNotificationObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91A930FBE0AF306AAA00 /* PBDNotificationObserver.m */; };
 		DFE8525EF55CBC0B62B76592 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EA092E65070EB5818F8D5 /* libPods.a */; };
@@ -40,12 +36,7 @@
 		438A171C1AE41314009DFF9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		438A171E1AE41314009DFF9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		438A171F1AE41314009DFF9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		438A17221AE41314009DFF9A /* PBDNotificationObserver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PBDNotificationObserver.xcdatamodel; sourceTree = "<group>"; };
-		438A17241AE41314009DFF9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		438A17251AE41314009DFF9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		438A17281AE41314009DFF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		438A172A1AE41314009DFF9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		438A172D1AE41314009DFF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		438A17331AE41314009DFF9A /* PBDNotificationObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBDNotificationObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438A17381AE41314009DFF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		438A17391AE41314009DFF9A /* PBDNotificationObserverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBDNotificationObserverTests.m; sourceTree = "<group>"; };
@@ -100,12 +91,7 @@
 			children = (
 				438A171E1AE41314009DFF9A /* AppDelegate.h */,
 				438A171F1AE41314009DFF9A /* AppDelegate.m */,
-				438A17241AE41314009DFF9A /* ViewController.h */,
-				438A17251AE41314009DFF9A /* ViewController.m */,
-				438A17271AE41314009DFF9A /* Main.storyboard */,
 				438A172A1AE41314009DFF9A /* Images.xcassets */,
-				438A172C1AE41314009DFF9A /* LaunchScreen.xib */,
-				438A17211AE41314009DFF9A /* PBDNotificationObserver.xcdatamodeld */,
 				438A171A1AE41314009DFF9A /* Supporting Files */,
 				B27A9957B0D48EE3B8731C6B /* Lib */,
 			);
@@ -141,8 +127,8 @@
 		B27A9957B0D48EE3B8731C6B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				B27A91A930FBE0AF306AAA00 /* PBDNotificationObserver.m */,
 				B27A9B012366C1D201533172 /* PBDNotificationObserver.h */,
+				B27A91A930FBE0AF306AAA00 /* PBDNotificationObserver.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -251,8 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438A17291AE41314009DFF9A /* Main.storyboard in Resources */,
-				438A172E1AE41314009DFF9A /* LaunchScreen.xib in Resources */,
 				438A172B1AE41314009DFF9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,8 +320,6 @@
 			files = (
 				438A17201AE41314009DFF9A /* AppDelegate.m in Sources */,
 				438A171D1AE41314009DFF9A /* main.m in Sources */,
-				438A17261AE41314009DFF9A /* ViewController.m in Sources */,
-				438A17231AE41314009DFF9A /* PBDNotificationObserver.xcdatamodeld in Sources */,
 				B27A9A9568E53F9CF8C7FDAC /* PBDNotificationObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438A173A1AE41314009DFF9A /* PBDNotificationObserverTests.m in Sources */,
+				431909601B5E3E6E0061225F /* PBDNotificationObserverTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,25 +341,6 @@
 			targetProxy = 438A17341AE41314009DFF9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		438A17271AE41314009DFF9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				438A17281AE41314009DFF9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		438A172C1AE41314009DFF9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				438A172D1AE41314009DFF9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		438A173B1AE41314009DFF9A /* Debug */ = {
@@ -416,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -454,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +431,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PBDNotificationObserver/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
@@ -481,7 +443,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PBDNotificationObserver/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
@@ -543,19 +504,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		438A17211AE41314009DFF9A /* PBDNotificationObserver.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				438A17221AE41314009DFF9A /* PBDNotificationObserver.xcdatamodel */,
-			);
-			currentVersion = 438A17221AE41314009DFF9A /* PBDNotificationObserver.xcdatamodel */;
-			path = PBDNotificationObserver.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 438A170F1AE41314009DFF9A /* Project object */;
 }

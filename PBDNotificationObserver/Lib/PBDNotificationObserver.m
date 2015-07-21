@@ -45,13 +45,23 @@ void VerifyNotificationsCountWithLocation(id observer, id matcherOrNotificationN
 
 @implementation PBDNotificationObserver
 
++ (instancetype)observerForObject:(id)postingObject {
+    return [[self alloc] initWithPostingObject:postingObject];
+}
+
 - (instancetype)init {
+    return [self initWithPostingObject:nil];
+}
+
+- (instancetype)initWithPostingObject:(id)postingObject {
     self = [super init];
     if (self) {
+        _postingObject = postingObject;
+
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(notificationPosted:)
                                                      name:nil
-                                                   object:nil];
+                                                   object:postingObject];
 
         self.capturedNotifications = [NSMutableArray new];
     }
