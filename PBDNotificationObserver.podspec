@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'PBDNotificationObserver'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.summary  = 'PBDNotificationObserver is a tests helper which can be used to assert whether a specific notification was posted.'
   s.homepage = 'https://github.com/paweldudek/PBDNotificationObserver'
   s.license  = 'MIT'

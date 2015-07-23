@@ -4,6 +4,12 @@
 #import "PBDNotificationObserver.h"
 #import <OCHamcrest/OCHamcrest.h>
 
+@interface NSObject (OCMockitoCompatiblity)
+
+-(void)captureArgument:(id)arg;
+
+@end
+
 @interface PBDNotificationObserver ()
 @property(nonatomic, strong) NSMutableArray *capturedNotifications;
 @end
@@ -20,6 +26,10 @@ void VerifyNotificationsCountWithLocation(id observer, id matcherOrNotificationN
 
     NSInteger numberOfMatches = 0;
     for (NSNotification *notification in [[observer capturedNotifications] copy]) {
+        // OCMockito argument captor compatibility
+        if ([matcher respondsToSelector:@selector(captureArgument:)]) {
+            [(NSObject*) matcher captureArgument:notification];
+        }
         numberOfMatches += [matcher matches:notification];
     }
 
