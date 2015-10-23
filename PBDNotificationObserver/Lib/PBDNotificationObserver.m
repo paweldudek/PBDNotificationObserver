@@ -3,6 +3,9 @@
  */
 #import "PBDNotificationObserver.h"
 #import <OCHamcrest/OCHamcrest.h>
+#import <OCHamcrest/HCTestFailureReporterChain.h>
+
+
 
 @interface NSObject (OCMockitoCompatiblity)
 
@@ -48,7 +51,7 @@ void VerifyNotificationsCountWithLocation(id observer, id matcherOrNotificationN
                                                                 fileName:[NSString stringWithUTF8String:fileName]
                                                               lineNumber:(NSUInteger)lineNumber
                                                                   reason:reason];
-        HCTestFailureHandler *chain = HC_testFailureHandlerChain();
+        HCTestFailureHandler *chain = [HCTestFailureReporterChain reporterChain];
         [chain handleFailure:failure];
     }
 };
