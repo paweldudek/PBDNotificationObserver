@@ -8,4 +8,6 @@ podspec path: 'PBDNotificationObserver'
 
 target :specs, :exclusive => true do
   link_with 'PBDNotificationObserverTests'
+
+  pod 'OCHamcrest'
 end

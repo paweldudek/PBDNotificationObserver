@@ -5,14 +5,6 @@
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCHamcrest/HCTestFailureReporterChain.h>
 
-
-
-@interface NSObject (OCMockitoCompatiblity)
-
--(void)captureArgument:(id)arg;
-
-@end
-
 @interface PBDNotificationObserver ()
 @property(nonatomic, strong) NSMutableArray *capturedNotifications;
 @end
@@ -29,10 +21,6 @@ void VerifyNotificationsCountWithLocation(id observer, id matcherOrNotificationN
 
     NSInteger numberOfMatches = 0;
     for (NSNotification *notification in [[observer capturedNotifications] copy]) {
-        // OCMockito argument captor compatibility
-        if ([matcher respondsToSelector:@selector(captureArgument:)]) {
-            [(NSObject*) matcher captureArgument:notification];
-        }
         numberOfMatches += [matcher matches:notification];
     }
 
@@ -51,7 +39,7 @@ void VerifyNotificationsCountWithLocation(id observer, id matcherOrNotificationN
                                                                 fileName:[NSString stringWithUTF8String:fileName]
                                                               lineNumber:(NSUInteger)lineNumber
                                                                   reason:reason];
-        HCTestFailureHandler *chain = [HCTestFailureReporterChain reporterChain];
+        HCTestFailureReporter *chain = [HCTestFailureReporterChain reporterChain];
         [chain handleFailure:failure];
     }
 };
